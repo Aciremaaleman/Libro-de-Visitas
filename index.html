@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libro</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<section class="container">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+      <h1>Libro de visitas</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
+      <p>Comentarios pasados:</p>
+    </div>
+  </div>
+  <div class="row">
+    <div id="post" class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
+      <p></p>
+    </div>
+  </div>
+  <div class="row">
+    <div id="post" class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
+      <p></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+      <h2>Agregar nuevo comentario</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-lg-10 col-xs-offset-2 col-lg-offset-2 menu">
+      <ul class="nav nav-pills">
+        <li id="large"  role="presentation" class="large"><a href="#">Large</a></li>
+        <li id="medium" role="presentation" class="medium"><a href="#">Medium</a></li>
+        <li id="small" role="presentation" class="small"><a href="#">Small</a></li>
+        <li id="colorText" role="presentation" class="colorText"><a href="#">Color de Texto</a></li>
+        <li id="colorFondo" role="presentation" class="colorFondo"><a href="#">Color de fondo</a></li>
+        <li id="Izquierda" role="presentation" class="Izquierda"><a href="#">Izquierda</a></li>
+        <li id="centrar" role="presentation" class="centrar"><a href="#">Centrar</a></li>
+        <li id="Derecha"role="presentation" class="Derecha"><a href="#">Derecha</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div id="textarea_one" class="col-xs-10 col-lg-10 col-xs-offset-2 col-lg-offset-2">
+      <textarea name="name" rows="7" cols="100" width="100px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+      <h3>Asi se verán tus comentarios:</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-lg-4 col-xs-offset-8 col-lg-offset-8">
+      <p id="text_two"></p>
+      <button id="submit" type="button" class="default" name="button">Enviar mensaje</button>
+    </div>
+  </div>
+</section>
+
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
