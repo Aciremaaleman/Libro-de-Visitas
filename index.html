@@ -15,69 +15,61 @@
 
 <body>
 
-<section class="container">
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-      <h1>Libro de visitas</h1>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+        <h1>Libro de visitas</h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
-      <p>Comentarios pasados:</p>
+    <div class="row">
+      <div class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
+        <p>Comentarios pasados:</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div id="post" class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
-      <p></p>
+    <!-- <div> -->
+      <p id="post"></p>
+    <!-- </div> -->
     </div>
-  </div>
-  <div class="row">
-    <div id="post" class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
-      <p></p>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+        <h2>Agregar nuevo comentario</h2>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-      <h2>Agregar nuevo comentario</h2>
+    <div class="row">
+      <div class="col-xs-10 col-lg-10 col-xs-offset-2 col-lg-offset-2 menu">
+        <button id="large"  class="primary" type="button">Large</button>
+        <button id="medium"  class="primary" type="button">Medium</button>
+        <button id="small" class="primary"  type="button">Small</button>
+        <button id="colorText"  class="primary" type="button">Color de Texto</button>
+        <button id="colorFondo"  class="primary" type="button">Color de Fondo</button>
+        <button id="izquierda"  class="primary" type="button">Izquierda</button>
+        <button id="centrar"  class="primary" type="button">Centrar</button>
+        <button id="derecha"  class="primary" type="button">Derecha</button>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-10 col-lg-10 col-xs-offset-2 col-lg-offset-2 menu">
-      <ul class="nav nav-pills">
-        <li id="large"  role="presentation" class="large"><a href="#">Large</a></li>
-        <li id="medium" role="presentation" class="medium"><a href="#">Medium</a></li>
-        <li id="small" role="presentation" class="small"><a href="#">Small</a></li>
-        <li id="colorText" role="presentation" class="colorText"><a href="#">Color de Texto</a></li>
-        <li id="colorFondo" role="presentation" class="colorFondo"><a href="#">Color de fondo</a></li>
-        <li id="Izquierda" role="presentation" class="Izquierda"><a href="#">Izquierda</a></li>
-        <li id="centrar" role="presentation" class="centrar"><a href="#">Centrar</a></li>
-        <li id="Derecha"role="presentation" class="Derecha"><a href="#">Derecha</a></li>
-      </ul>
+    <div class="row">
+      <div id="textarea_one" class="col-xs-11 col-lg-11 col-xs-offset-1 col-lg-offset-1">
+        <div class="form-group">
+          <label for="comment"></label>
+          <textarea class="form-control" rows="4" id="comment"></textarea>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div id="textarea_one" class="col-xs-10 col-lg-10 col-xs-offset-2 col-lg-offset-2">
-      <textarea name="name" rows="7" cols="100" width="100px"></textarea>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
+        <h3>Asi se verán tus comentarios:</h3>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
-      <h3>Asi se verán tus comentarios:</h3>
+    <p id="print">hola</p>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-lg-4 col-xs-offset-8 col-lg-offset-8">
-      <p id="text_two"></p>
+    </div>
+    <div class="col-xs-3 col-lg-3 col-xs-offset-9 col-lg-offset-9">
       <button id="submit" type="button" class="default" name="button">Enviar mensaje</button>
     </div>
-  </div>
-</section>
+  </section>
 
 
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="app.js"></script>

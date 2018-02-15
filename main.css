@@ -1,3 +1,33 @@
 h1 , h2, h3 {
   text-align: center;
 }
+.primary{
+  background-color: blue;
+  border-radius: 10%;
+  text-decoration: none;
+  color: white;
+}
+.large{
+  font-size: 60px;
+}
+.medium{
+  font-size: 40px;
+}
+.small{
+  font-size: 20px;
+}
+.colorText{
+  color:red;
+}
+.colorBack{
+  background-color: yellow;
+}
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
