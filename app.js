@@ -14,7 +14,7 @@ var $rgt = $("#derecha");
 // Se mandan a llamar el elemento por medio del id para subir el texto
 var $btn = $("#submit");
 // Se agrega el comentario al lugar indicado
-// var $postComment = $("#post");
+var $pstCom = $("#post");
 // Se inicializa jquery
 $(document).ready(function() {
   // se agrega el evento al textarea para comenzar la funcion de obtener el valor.
@@ -66,8 +66,17 @@ function textRight() {
   $("#print").attr('class','right');
 };
 
-function postComment(e){
-  e.preventDefault();
-  var $textComment = $commentShow.val().trim();
-  $("#post").text($textComment);
+// function postComment(e){
+//   e.preventDefault();
+//   var $textComment = $commentShow.val().trim();
+//   $("#post").text($textComment);
+// };
+
+// .clone sirve para clonar
+function postComment(){
+  $comment.val(" ");
+  var newComment = $("#print").clone().prependTo($pstCom);
+  newComment.removeAttr("print");
+  $commentShow.empty();
+
 };
