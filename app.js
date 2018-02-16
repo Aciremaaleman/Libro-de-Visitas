@@ -32,7 +32,7 @@ var $data = [{
     textalign: 'center'
   },
 }];
-console.log($data)
+// console.log($data)
 // Se inicializa jquery
 $(document).ready(function() {
   // se agrega el evento al textarea para comenzar la funcion de obtener el valor.
@@ -66,15 +66,23 @@ function sizeSm(){
   $("#print").css('fontSize','10px');
 };
 // Indica por un prompt el color de texto que indicas.
-function colorTx(){
-  var $changeColor = prompt('¿Qué color quieres?');
-  $("#print").css("color") = $changeColor;
-  console.log(changeColor);
+function colorF() {
+  $commentShow.text("");
+  var backgroundColor = prompt("Ingresa tu color favorito");
+  backgroundColor = (backgroundColor);
+  $print = $comment.val();
+  $commentShow.css("backgroundColor", backgroundColor);
+  $commentShow.append($print);
 };
 // Indica por un prompt el color de fondo que indicas.
-function colorF(){
-  var $changeBack = prompt('¿Qué color quieres?');
-  $("#print").css("backgroundColor") = $changeBack;
+function colorTx(){
+  $commentShow.text("");
+  var color = prompt("Ingresa tu color favorito");
+  color = (color);
+  $printColor = $comment.val();
+  console.log(color);
+  $commentShow.css("color", color);
+  $commentShow.append($printColor);
 };
 function textLeft() {
   $("#print").css('textAlign','left');
