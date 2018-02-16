@@ -11,10 +11,28 @@ var $cF = $("#colorFondo");
 var $lft = $("#izquierda");
 var $ctr = $("#centrar");
 var $rgt = $("#derecha");
-// Se mandan a llamar el elemento por medio del id para subir el texto
+// Se mandan a llamar el elemento por medio del id para Agregar evento.
 var $btn = $("#submit");
-// Se agrega el comentario al lugar indicado
+// Se agrega el comentario al lugar indicado del html.
 var $pstCom = $("#post");
+// Se crea objeto de arrays vacio para guardar los datos.
+var $data = [{
+  content:'hola',
+  style : {
+    color: 'red',
+    background: 'black',
+    fontsize: '60px',
+    textalign: 'left'
+  },
+  content:'adios',
+  style : {
+    color: 'white',
+    background: 'red',
+    fontsize: '30px',
+    textalign: 'center'
+  },
+}];
+console.log($data)
 // Se inicializa jquery
 $(document).ready(function() {
   // se agrega el evento al textarea para comenzar la funcion de obtener el valor.
@@ -30,53 +48,61 @@ $(document).ready(function() {
   $rgt.click(textRight);
   // Boton para postear comentario final
   $btn.click(postComment);
-
-
 });
 
-function getText(e){
-  e.preventDefault();
+function getText(){
   var $text = $comment.val().trim();
   $commentShow.text($text);
 };
 
+// Agrega clases con estilo en css para darle formato al párrafo.
 function sizeLarge(){
-  $("#print").attr('class','large');
-
+  $("#print").css('fontSize','60px');
 };
 function sizeMd(){
-  $("#print").attr('class','medium');
+  $("#print").css('fontSize','40px');
 };
 function sizeSm(){
-  $("#print").attr('class','small');
+  $("#print").css('fontSize','10px');
 };
+// Indica por un prompt el color de texto que indicas.
 function colorTx(){
-  $("#print").attr('class','colorText');
+  var $changeColor = prompt('¿Qué color quieres?');
+  $("#print").css("color") = $changeColor;
+  console.log(changeColor);
 };
+// Indica por un prompt el color de fondo que indicas.
 function colorF(){
-  $("#print").attr('class','colorBack');
+  var $changeBack = prompt('¿Qué color quieres?');
+  $("#print").css("backgroundColor") = $changeBack;
 };
 function textLeft() {
-  $("#print").attr('class','left');
+  $("#print").css('textAlign','left');
 };
 function textCenter() {
-  $("#print").attr('class','center');
+  $("#print").css('textAlign','center');
 };
 function textRight() {
-  $("#print").attr('class','right');
+  $("#print").css('textAlign','right');
 };
 
-// function postComment(e){
-//   e.preventDefault();
-//   var $textComment = $commentShow.val().trim();
-//   $("#post").text($textComment);
-// };
-
-// .clone sirve para clonar
+// .clone sirve para clonar un elemento.
 function postComment(){
   $comment.val(" ");
-  var newComment = $("#print").clone().prependTo($pstCom);
-  newComment.removeAttr("print");
-  $commentShow.empty();
-
+  var $newComment = $("#print").clone().prependTo($pstCom).removeAttr('id');
+  $commentShow.empty().removeAttr('class').css("background-color", "").css("color","");
+  // keptData($newComment);
 };
+
+// Se guarda el comentario en un array.
+// function keptData($newComment){
+//   var array = $dta.push($newComment);
+//   console.log(array);
+// };
+
+// content
+// var x = { content:null,style:{} };
+// x.content=newX;
+// newX.style.color=text.style.color
+//
+// object.assign(parametro1,parametro2)
