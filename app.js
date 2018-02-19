@@ -12,27 +12,9 @@ var $lft = $("#izquierda");
 var $ctr = $("#centrar");
 var $rgt = $("#derecha");
 // Se mandan a llamar el elemento por medio del id para Agregar evento.
-var $btn = $("#submit");
+// var $btn = $("#submit");
 // Se agrega el comentario al lugar indicado del html.
-var $pstCom = $("#post");
-// Se crea objeto de arrays vacio para guardar los datos.
-var $data = [{
-  content:'hola',
-  style : {
-    color: 'red',
-    background: 'black',
-    fontsize: '60px',
-    textalign: 'left'
-  },
-  content:'adios',
-  style : {
-    color: 'white',
-    background: 'red',
-    fontsize: '30px',
-    textalign: 'center'
-  },
-}];
-// console.log($data)
+// var $pstCom = $("#post");
 // Se inicializa jquery
 $(document).ready(function() {
   // se agrega el evento al textarea para comenzar la funcion de obtener el valor.
@@ -47,7 +29,7 @@ $(document).ready(function() {
   $ctr.click(textCenter);
   $rgt.click(textRight);
   // Boton para postear comentario final
-  $btn.click(postComment);
+  // $btn.click(postComment);
 });
 
 function getText(){
@@ -69,8 +51,9 @@ function sizeSm(){
 function colorF() {
   $commentShow.text("");
   var backgroundColor = prompt("Ingresa tu color favorito");
+  // $commentShow.style.backgroundColor = backgroundColor; gorma javascript
   backgroundColor = (backgroundColor);
-  $print = $comment.val();
+  var $print = $comment.val();
   $commentShow.css("backgroundColor", backgroundColor);
   $commentShow.append($print);
 };
@@ -95,12 +78,12 @@ function textRight() {
 };
 
 // .clone sirve para clonar un elemento.
-function postComment(){
-  $comment.val(" ");
-  var $newComment = $("#print").clone().prependTo($pstCom).removeAttr('id');
-  $commentShow.empty().removeAttr('class').css("background-color", "").css("color","");
+// function postComment(){
+//   $comment.val(" ");
+//   var $newComment = $("#print").clone().prependTo($pstCom).removeAttr('id');
+//   $commentShow.empty().removeAttr('class').css("background-color", "").css("color","");
   // keptData($newComment);
-};
+// };
 
 // Se guarda el comentario en un array.
 // function keptData($newComment){

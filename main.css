@@ -9,8 +9,8 @@ h1, h2, h3 {
 }
 
 .newPrint{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid #87ef77;
+  border-bottom: 2px solid #87ef77;
   margin-top: 10px;
   height: 100px;
 }
